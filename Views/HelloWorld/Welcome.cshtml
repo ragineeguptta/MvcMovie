@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<ul>
+    @for (int i = 1; i <= (int)ViewData["NumTimes"]!; i++)
+    {
+        <li>@i - @ViewData["Message"] </li>
+    }
+</ul>
